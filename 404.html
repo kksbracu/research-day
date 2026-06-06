@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      // Preserve the URL parameters when redirecting to index.html
+      const path = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+      
+      // Redirect to index.html with all query parameters preserved
+      window.location.replace('/research-day/?' + search.slice(1) + hash);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
